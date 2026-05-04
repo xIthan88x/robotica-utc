@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club de Robótica UTC Nezahualcóyotl - ELITE ROBOTS 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="particles"></canvas>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Club de Robótica UTC">
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+
+                <li class="dropdown">
+                    <a href="#categories">Categorías ▼</a>
+                    <ul class="submenu">
+                        <li><a href="categoria-seguidor.html">Seguidor de Línea</a></li>
+                        <li><a href="categoria-soccer.html">Robot-Soccer</a></li>
+                        <li><a href="categoria-laberinto.html">Laberinto / Ratón</a></li>
+                        <li><a href="categoria-combate.html">Robot de Combate</a></li>
+                        <li><a href="categoria-velocista.html">Robot Velocista</a></li>
+                        <li><a href="categoria-zumo.html">Zumo</a></li>
+                        <li><a href="categoria-libre.html">Categoría Libre</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#torneo">Torneo</a></li>
+                <li><a href="#events">Eventos</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <div class="theme-toggle">
+                <button id="theme-switch">
+                    <span>☀️</span>
+                    <span>🌙</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero" style="background: url('hero-bg.jpg') center/cover no-repeat;">
+        <div class="hero-overlay">
+            <h1>CLUB DE ROBÓTICA UTC</h1>
+            <p>Universidad Tres Culturas • Plantel Nezahualcóyotl</p>
+
+            <div class="hero-buttons">
+                <a href="#torneo" class="cta">Ver Convocatoria</a>
+                <a href="#categories" class="cta secondary">Explorar Categorías</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+    <div class="about-container">
+        <h2>Sobre el Club de Robótica UTC</h2>
+        
+        <p class="about-intro">El espacio oficial donde los estudiantes de Ingeniería en Sistemas Computacionales de la Universidad Tres Culturas – Plantel Nezahualcóyotl convierten ideas en robots que compiten a nivel élite.</p>
+
+        <div class="about-grid">
+            <div class="about-card">
+                <div class="icon">🤖</div>
+                <h3>Diseño y Construcción</h3>
+                <p>Diseñamos, armamos y programamos robots desde cero para competir en 7 categorías oficiales.</p>
+            </div>
+            <div class="about-card">
+                <div class="icon">🏆</div>
+                <h3>Competencia</h3>
+                <p>Somos organizadores del Torneo ELITE ROBOTS y representamos a la UTC en eventos nacionales.</p>
+            </div>
+            <div class="about-card">
+                <div class="icon">💡</div>
+                <h3>Innovación</h3>
+                <p>Fomentamos el uso de IA, electrónica avanzada y programación de alto nivel.</p>
+            </div>
+            <div class="about-card">
+                <div class="icon">👥</div>
+                <h3>Equipo</h3>
+                <p>Trabajo en equipo, disciplina y espíritu deportivo. ¡Aquí nacen los futuros ingenieros élite!</p>
+            </div>
+        </div>
+</section>
+
+<section id="categories">
+    <h2>Categorías del Torneo</h2>
+    <br>
+    <div class="category-row row-4">
+        <a href="categoria-seguidor.html" class="category-card">
+            <img src="logo-seguidor.jpg" alt="Seguidor de Línea">
+            <h3>Seguidor de Línea</h3>
+        </a>
+        <a href="categoria-soccer.html" class="category-card">
+            <img src="logo-soccer.jpg" alt="Robot-Soccer">
+            <h3>Robot-Soccer</h3>
+        </a>
+        <a href="categoria-laberinto.html" class="category-card">
+            <img src="logo-laberinto.jpg" alt="Laberinto / Ratón">
+            <h3>Laberinto / Ratón</h3>
+        </a>
+        <a href="categoria-combate.html" class="category-card">
+            <img src="logo-combate.jpg" alt="Robot de Combate">
+            <h3>Robot de Combate</h3>
+        </a>
+    </div>
+
+    <!-- Fila 2: 3 tarjetas centradas -->
+    <div class="category-row row-3">
+        <a href="categoria-velocista.html" class="category-card">
+            <img src="logo-velocista.jpg" alt="Robot Velocista">
+            <h3>Robot Velocista</h3>
+        </a>
+        <a href="categoria-zumo.html" class="category-card">
+            <img src="logo-zumo.jpg" alt="Zumo">
+            <h3>Zumo</h3>
+        </a>
+        <a href="categoria-libre.html" class="category-card">
+            <img src="logo-libre.jpg" alt="Categoría Libre">
+            <h3>Categoría Libre</h3>
+        </a>
+    </div>
+</section>
+
+<!-- SECCIÓN TORNE0 - VERSIÓN MEJORADA Y CENTRADA -->
+<section id="torneo">
+    <div class="torneo-container">
+        <h2>Torneo ELITE ROBOTS </h2>
+        <p><strong>Fecha:</strong> 15 de diciembre 2026<br>
+            <strong>Lugar:</strong> Sala de usos múltiples, Edificio 1 - Universidad Tres Culturas Plantel Nezahualcóyotl</p>
+        
+        <h3>Registro abierto</h3>
+        <p>Hasta el 10 de diciembre 2025</p>
+        
+        <a href="mi-inscripcion.html" target="_blank" class="cta big">REGISTRAR EQUIPO AHORA</a>
+
+        <h3>Descarga documentos oficiales</h3>
+        <div class="download-buttons">
+            <a href="Reglamento.pdf" download class="cta download">📄 Reglamento Completo</a>
+            <a href="Convocatoria.pdf" download class="cta download">📘 Convocatoria Oficial</a>
+        </div>
+        
+        <p class="note">Todos los equipos deben conocer el reglamento. Máximo 2 integrantes por equipo (excepto Soccer hasta 4).</p>
+        <br> 
+        <a href="mi-inscripcion.html" class="cta">Ver mi inscripción</a>
+    </div>
+</section>
+
+<section id="events">
+    <div class="events-card">
+        <h2>Próximo Evento</h2>
+        <h3>Gran Torneo ELITE ROBOTS </h3>
+        <p class="date">15 de diciembre 2026 • Plantel Nezahualcóyotl</p>
+        
+        <!-- NUEVO CONTADOR BONITO -->
+        <div class="countdown">
+            <div class="time-box">
+                <span id="days">00</span>
+                <p>Días</p>
+            </div>
+            <div class="time-box">
+                <span id="hours">00</span>
+                <p>Horas</p>
+            </div>
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <p>Minutos</p>
+            </div>
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <p>Segundos</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Galería del Torneo Anterior</h2>
+    <p class="subtitle">Momentos épicos que inspiran la próxima generación</p>
+
+    <!-- CARRUSEL MODERNO -->
+    <div class="carousel-container">
+        <div class="carousel-track" id="carousel-track">
+            <img src="galeria1.jpg" alt="Robot Soccer">
+            <img src="galeria2.jpg" alt="Zumo en acción">
+            <img src="galeria3.jpg" alt="Combate">
+            <img src="galeria4.jpg" alt="Seguidor de Línea">
+            <img src="galeria5.jpg" alt="Laberinto">
+            <img src="galeria6.jpg" alt="Velocista">
+            <img src="galeria7.jpg" alt="Preparación">
+            <img src="galeria8.jpg" alt="Premiación">
+        </div>
+
+        <!-- Controles -->
+        <button class="carousel-btn prev" id="prev-btn">❮</button>
+        <button class="carousel-btn next" id="next-btn">❯</button>
+        
+        <!-- Dots -->
+        <div class="carousel-dots" id="carousel-dots"></div>
+    </div>
+<h3>Videos destacados del torneo anterior</h3>
+
+<div class="video-carousel-container">
+    <div class="video-carousel-track" id="video-carousel-track">
+        
+        <!-- Video 1 -->
+        <div class="video-carousel-item">
+            <div class="video-wrapper">
+                <iframe src="video1.mp4" title="Seguidor de Línea" frameborder="0" allowfullscreen></iframe>
+                <div class="play-overlay">▶</div>
+            </div>
+            <h4>Seguidor de Línea</h4>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-carousel-item">
+            <div class="video-wrapper">
+                <iframe src="video2.mp4" title="Combate Épico" frameborder="0" allowfullscreen></iframe>
+                <div class="play-overlay">▶</div>
+            </div>
+            <h4>Combate de Robots</h4>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-carousel-item">
+            <div class="video-wrapper">
+                <iframe src="video3.mp4" title="Velocistas" frameborder="0" allowfullscreen></iframe>
+                <div class="play-overlay">▶</div>
+            </div>
+            <h4>Velocistas</h4>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="video-carousel-item">
+            <div class="video-wrapper">
+                <iframe src="video4.mp4" title="Robot-Soccer" frameborder="0" allowfullscreen></iframe>
+                <div class="play-overlay">▶</div>
+            </div>
+            <h4>Robot-Soccer en acción</h4>
+        </div>
+
+    </div>
+
+    <!-- Controles -->
+    <button class="carousel-btn prev" id="video-prev">❮</button>
+    <button class="carousel-btn next" id="video-next">❯</button>
+    <div class="carousel-dots" id="video-dots"></div>
+</div>
+</section>
+
+<section id="contact">
+    <h2>Inscripción al Torneo ELITE ROBOTS</h2>
+    <p class="subtitle">Completa los datos de tu equipo</p>
+    
+    <form id="inscripcion-form">
+        <input type="text" id="nombre_equipo" placeholder="Nombre del Equipo" required>
+        
+        <select id="categoria" required>
+            <option value="" disabled selected>Selecciona una categoría</option>
+            <option value="Seguidor de Línea">Seguidor de Línea</option>
+            <option value="Robot-Soccer">Robot-Soccer</option>
+            <option value="Laberinto / Ratón">Laberinto / Ratón</option>
+            <option value="Robot de Combate">Robot de Combate</option>
+            <option value="Robot Velocista">Robot Velocista</option>
+            <option value="Zumo">Zumo</option>
+            <option value="Categoría Libre">Categoría Libre</option>
+        </select>
+        
+        <textarea id="miembros" placeholder="Miembros del equipo (separados por coma)" rows="4" required></textarea>
+        
+        <input type="text" id="plantel" placeholder="Plantel / Escuela" value="UTC Nezahualcóyotl" required>
+        
+        <input type="email" id="email_contacto" placeholder="Email de contacto" required>
+        
+        <button type="submit">Enviar Inscripción</button>
+    </form>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Club de Robótica UTC • Universidad Tres Culturas</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
